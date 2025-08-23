@@ -1,4 +1,4 @@
-import { query } from "./_generated/server";
+import { mutation, query } from "./_generated/server";
 export const getMany = query({
   args: {},
   handler: async (context) => {
@@ -7,3 +7,13 @@ export const getMany = query({
     return users;
   },
 });
+
+
+export const add = mutation({
+  args:{},
+  handler: async(context) =>{
+    const userId = await context.db.insert("users",{
+      name:"Sahil"
+    })
+  }
+})
