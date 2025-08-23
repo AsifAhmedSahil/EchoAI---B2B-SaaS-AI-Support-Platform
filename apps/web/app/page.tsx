@@ -14,6 +14,7 @@ export default function Page() {
     <div className="flex items-center justify-center min-h-svh">
       <p>apps/web</p>
       <UserButton/>
+      <button onClick={()=> addUser()}>Add User</button>
       {
         JSON.stringify(users)
       }
