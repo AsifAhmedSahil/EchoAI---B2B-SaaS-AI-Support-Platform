@@ -25,4 +25,3 @@ const AuthGuard = ({children}:{children:React.ReactNode}) => {
 
 export default AuthGuard
 
-// update
