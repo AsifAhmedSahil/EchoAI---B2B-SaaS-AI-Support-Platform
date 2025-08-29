@@ -4,7 +4,7 @@ import React from 'react'
 export const SignInView = () => {
   return (
     <div>
-        <SignIn/>
+        <SignIn routing='hash'/>
     </div>
   )
 }

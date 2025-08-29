@@ -1,3 +1,4 @@
+'use client'
 import { Authenticated, AuthLoading, Unauthenticated } from 'convex/react'
 import React from 'react'
 import { AuthLayout } from '../layouts/auth-layout'
@@ -12,8 +13,8 @@ const AuthGuard = ({children}:{children:React.ReactNode}) => {
       </AuthLayout>
     </AuthLoading>
     <Authenticated>
-      {children}
-    </Authenticated>
+      {children} 
+    </Authenticated> 
     <Unauthenticated>
       <AuthLayout>
         <SignInView/>
@@ -25,4 +26,3 @@ const AuthGuard = ({children}:{children:React.ReactNode}) => {
 
 export default AuthGuard
 
-// update final
